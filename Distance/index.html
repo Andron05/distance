@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Дистанция</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalise.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <button class="m-menu">
+               <span class="line"></span>
+               <span class="line"></span>
+               <span class="line"></span>
+           </button>
+            <div class="search">
+                <input type="search" class="search-input" placeholder="Поиск">
+            </div>
+            <div class="navigation">
+                <div class="user">
+                    <img class="user-avatar" src="img/photo.png" alt="Аватар">
+                    <span class="user-name">Алексей</span>
+                </div>
+                <div class="navigation-panel">
+                    <a href="#" class="navigation-link">Домой</a>
+                    <a href="#" class="navigation-link">Создать</a>
+                </div>
+                <div class="icons-panel">
+                    <a href="#" class="icons-link">
+                        <svg class="header-icon" width="22" height="22">
+                            <use xlink:href="img/icons.svg#users"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <svg class="header-icon" width="25" height="21">
+                            <use xlink:href="img/icons.svg#chat"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <svg class="header-icon" width="16" height="22">
+                            <use xlink:href="img/icons.svg#bell"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <svg class="header-icon" width="22" height="22">
+                            <use xlink:href="img/icons.svg#info"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="menu-sidebar">
+                <div class="user">
+                    <img class="user-avatar" src="img/photo.png" alt="Аватар">
+                    <span class="user-name">Алексей Виресбики</span>
+                </div>
+                <nav class="nav-group">
+                    <a href="#" class="nav-link active">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#news"></use>
+                        </svg>
+                        <span class="nav-text">Новости</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#messages"></use>
+                        </svg>
+                        <span class="nav-text">Сообщения</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#shop"></use>
+                        </svg>
+                        <span class="nav-text">Магазин</span>
+                    </a>
+                </nav>
+                <nav class="nav-group">
+                    <h6 class="nav-title">Быстрый доступ</h6>
+                    <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#cup"></use>
+                        </svg>
+                        <span class="nav-text">Product Design</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#cup"></use>
+                        </svg>
+                        <span class="nav-text">UX & UI</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#cup"></use>
+                        </svg>
+                        <span class="nav-text">Figma</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#cup"></use>
+                        </svg>
+                        <span class="nav-text">Ant Design</span>
+                    </a>
+                </nav>
+                <nav class="nav-group">
+                    <h6 class="nav-title">Изучить</h6>
+                    <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#flag"></use>
+                        </svg>
+                        <span class="nav-text">Страницы</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#ear"></use>
+                        </svg>
+                        <span class="nav-text">Группы</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#house"></use>
+                        </svg>
+                        <span class="nav-text">События</span>
+                    </a> <a href="#" class="nav-link">
+                        <svg width="24" height="24">
+                            <use xlink:href="img/icons.svg#rocket"></use>
+                        </svg>
+                        <span class="nav-text">Игры</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="main-feed">
+                <div class="create-post">
+                    <div class="create-post-header">
+                        <h4 class="create-post-title">Добавить запись</h4>
+                    </div>
+                    <div class="create-post-body">
+                        <img src="img/photo.png" alt="avatar" class="user-avatar">
+                        <div class="create-post-input" contenteditable="true">Что у вас нового, Алексей?</div>
+                    </div>
+                    <div class="create-post-footer">
+                        <button class="tag">
+                            <svg width="24" height="24" class="tag-icon">
+                                <use xlink:href="img/icons.svg#img"></use>
+                            </svg>
+                            <span class="button-text">Фото/Видео</span>
+                        </button>
+                        <button class="tag">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons.svg#tag"></use>
+                            </svg>
+                            <span class="button-text">Добавить друзей</span>
+                        </button>
+                        <button class="tag">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons.svg#smile"></use>
+                            </svg>
+                            <span class="button-text">Эмоции</span>
+                        </button>
+                        <button class="tag">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons.svg#points"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user">
+                            <img class="user-avatar" src="img/photo.png" alt="avatar">
+                            <div class="post-info">
+                                <a href="#" class="post-author">Алексей Виресбики</a>
+                                <div class="post-info-time">
+                                    <span class="post-time">3hrs</span>
+                                    <svg width="14" height="14">
+                                        <use xlink:href="img/icons.svg#setting"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="post-button"><svg width="24" height="24">
+                                <use xlink:href="img/icons.svg#points"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-text">Did you know that all of this was made using only components and styles from Ant Desing System for Figma?  Learn more: <a href="https://antforfigma.com">https://antforfigma.com</a></p>
+                        <img src="img/post-image.jpg" alt="post-image" class="post-image">
+                    </div>
+                    <div class="likes">
+                        <svg width="16" height="16">
+                            <use xlink:href="img/icons.svg#like"></use>
+                        </svg>
+
+                        <span class="likes-counter">23</span>
+                    </div>
+                    <div class="post-footer">
+                        <button class="post-button">
+                            <svg class="post-button-icon" width="24" height="24">
+                                <use xlink:href="img/icons.svg#like-active"></use>
+                            </svg>
+                            <span class="post-button-text">Лайк</span>
+                        </button>
+                        <button class="post-button">
+                            <svg class="post-button-icon" width="24" height="24">
+                                <use xlink:href="img/icons.svg#chat"></use>
+                            </svg>
+                            <span class="post-button-text">Комментарии</span>
+                        </button>
+                        <button class="post-button">
+                            <svg class="post-button-icon" width="24" height="24">
+                                <use xlink:href="img/icons.svg#share"></use>
+                            </svg>
+                            <span class="post-button-text">Поделиться</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="stories">
+                    <div class="stories-header">
+                        <h4 class="story-title">Истории</h4>
+                        <div class="story-buttons">
+                            <a href="#" class="story-button-link">
+                                <svg class="stories-icon" width="16" height="16">
+                                    <use xlink:href="img/icons.svg#clock-circle"></use>
+                                </svg>
+                                <span class="story-button-text">Архив</span>
+                            </a>
+                            <a href="#" class="story-button-link">
+                                <span class="story-button-text">Настройки</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="story-item-add">
+                        <div class="story-image">+</div>
+                        <span class="story-item-text">
+                            <span class="story-item-title">Добавь свою историю</span>
+                            <span class="story-text">Поделись фото или видео</span>
+                        </span>
+                    </a>
+                    <a href="#" class="story-item">
+                        <div class="story-image concuria"></div>
+                        <span class="story-item-text">
+                            <span class="story-item-title">Concuria</span>
+                            <span class="story-text">4 часа назад</span>
+                        </span>
+                    </a>
+                    <a href="#" class="story-item">
+                        <div class="story-image figma"></div>
+                        <span class="story-item-text">
+                            <span class="story-item-title">Figma</span>
+                            <span class="story-text">5 часов назад</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="birthday">
+                    <svg class="gift" width="24" height="24">
+                        <use xlink:href="img/icons.svg#gift"></use>
+                    </svg>
+                    <div class="birthday-text">
+                        <span class="birthday-boy-text"><a href="#">John Doe</a>’s birthday is today</span>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+     <script src="script.js"></script>
+</body>
+
+</html>
